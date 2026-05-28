@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top"
+    android:background="#EEF4FF"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="20dp"
+            android:elevation="10dp">
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Device Features"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#1E3A8A"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select your device and app features"
+                android:textSize="14sp"
+                android:textColor="#64748B"
+                android:layout_gravity="center"
+                android:layout_marginBottom="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Device"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#0F172A"
+                android:layout_marginBottom="2dp" />
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#F8FAFC"
+                android:padding="4dp"
+                android:layout_marginBottom="24dp">
+
+                <RadioButton
+                    android:id="@+id/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Android"
+                    android:textSize="18sp"
+                    android:textColor="#1E293B"
+                    android:buttonTint="#2563EB"
+                    android:layout_marginBottom="8dp" />
+
+                <RadioButton
+                    android:id="@+id/ios"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="iOS"
+                    android:textSize="18sp"
+                    android:textColor="#1E293B"
+                    android:buttonTint="#2563EB"
+                    android:layout_marginBottom="4dp" />
+
+                <RadioButton
+                    android:id="@+id/windows"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Windows"
+                    android:textSize="18sp"
+                    android:textColor="#1E293B"
+                    android:buttonTint="#2563EB" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Features"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#0F172A"
+                android:layout_marginBottom="2dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#F8FAFC"
+                android:padding="4dp"
+                android:layout_marginBottom="20dp">
+
+                <CheckBox
+                    android:id="@+id/notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notifications"
+                    android:textSize="18sp"
+                    android:textColor="#1E293B"
+                    android:buttonTint="#2563EB"
+                    android:layout_marginBottom="8dp" />
+
+                <CheckBox
+                    android:id="@+id/darkmode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dark Mode"
+                    android:textSize="18sp"
+                    android:textColor="#1E293B"
+                    android:buttonTint="#2563EB"
+                    android:layout_marginBottom="8dp" />
+
+                <CheckBox
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location Service"
+                    android:textSize="18sp"
+                    android:textColor="#1E293B"
+                    android:buttonTint="#2563EB"
+                    android:layout_marginBottom="8dp" />
+
+                <CheckBox
+                    android:id="@+id/backup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cloud Backup"
+                    android:textSize="18sp"
+                    android:textColor="#1E293B"
+                    android:buttonTint="#2563EB" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#2563EB" />
+
+            <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Selected Device :"
+                  android:textSize="20dp"
+                  android:textStyle="bold"
+                  android:id="@+id/sd"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selected Features :"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:id="@+id/sf"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

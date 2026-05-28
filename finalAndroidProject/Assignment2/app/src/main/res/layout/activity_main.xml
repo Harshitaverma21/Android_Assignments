@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:background="#EEF4FF"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="28dp"
+                android:background="#FFFFFF"
+                android:elevation="10dp">
+
+                <TextView
+                    android:id="@+id/wel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome 👋"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:textColor="#1E3A8A"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter your name to continue"
+                    android:textSize="16sp"
+                    android:textColor="#64748B"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30dp" />
+
+
+                <EditText
+                    android:id="@+id/nameEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="Your Name"
+                    android:textColor="#000000"
+                    android:textColorHint="#94A3B8"
+                    android:padding="16dp"
+                    android:textSize="16sp"
+                    android:backgroundTint="#3B82F6"
+                    android:inputType="textPersonName"
+                    android:layout_marginBottom="24dp" />
+
+
+                <Button
+                    android:id="@+id/btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Get Started"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#2563EB" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
